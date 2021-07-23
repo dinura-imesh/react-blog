@@ -1,13 +1,19 @@
 @import "./assets/style/variables"
-.App
+.app
     text-align: center
     display: flex
     justify-content: center
     width: 100%
+    height: 100% !important
 
-.router-wrapper
-    width: 60vw
+.inner-wrapper
+    width: 65vw !important
+    min-height: 100vh
+    background-color: #fafafa
+
+.content-wrapper
+    padding: 20px
 
 @media only screen and (max-width: 900px)
-    .router-wrapper
+    .inner-wrapper
         width: 100%

@@ -1,0 +1,47 @@
+@import "../../assets/style/variables"
+@import "../../assets/style/style"
+
+.blog-card
+    border: 1px solid $primary-color
+    padding: 12px
+    box-sizing: border-box
+    border-radius: 4px
+    text-align: left
+    transition-duration: 200ms
+    cursor: pointer
+    user-select: none
+
+.blog-card:hover
+    background-color: rgba(223, 200, 255, 0.1)
+
+.blog-card:hover>.read-more
+    padding-left: 20px
+    padding-right: 0
+
+.blog-card-title
+    font-size: 1.4em
+    font-family: $secondary-font
+    color: $primary-color-dark
+    margin-bottom: 10px
+    max-lines: 1
+    overflow: hidden
+    text-overflow: ellipsis
+    display: -webkit-box
+    -webkit-line-clamp: 1
+    -webkit-box-orient: vertical
+    padding-right: 20px
+
+.blog-card-preview
+    color: black
+    max-lines: 4
+    overflow: hidden
+    text-overflow: ellipsis
+    display: -webkit-box
+    -webkit-line-clamp: 4
+    -webkit-box-orient: vertical
+
+.read-more
+    font-size: 0.9em
+    margin-top: 8px
+    color: $primary-color
+    transition-duration: 200ms

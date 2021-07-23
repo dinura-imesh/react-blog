@@ -1,0 +1,11 @@
+@import "../../assets/style/style"
+.blog-card-grid
+    display: grid
+    width: 100%
+    grid-template-columns: repeat(3, 1fr)
+    grid-auto-rows: auto
+    grid-gap: 0.5em
+
+@media only screen and (max-width: 900px)
+    .blog-card-grid
+        grid-template-columns: repeat(1, 1fr)

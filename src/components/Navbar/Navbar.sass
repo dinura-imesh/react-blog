@@ -5,6 +5,7 @@
     box-sizing: border-box
     padding: 5px 20px
     @extend .flex-row
+    user-select: none
     align-items: center
 
 .logo
@@ -15,9 +16,14 @@
 
 .nav-item-wrapper
     @extend .flex-row
+    align-items: center
 
 .nav-item
     margin-left: 30px
     font-size: 1.2em
     color: $primary-color
     cursor: pointer
+    transition-duration: 200ms
+
+.nav-item:hover
+    text-shadow: 0 0 4px rgba(107, 88, 228, 0.33)
